@@ -1,14 +1,32 @@
 # 🚗 Used Car Price & Demand Predictor
 
-A machine learning project designed to predict used car prices based on features like manufacturer, year, kilometers driven, fuel type, transmission, engine power, and more.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange.svg" alt="ML">
+  <img src="https://img.shields.io/badge/Status-Active-success.svg" alt="Status">
+</p>
 
-## 📊 Project Workflow
-1. **EDA & Data Cleaning (`eda.py`):** Cleaning missing values, handling outliers, extracting car brands from names, and preparing `cleaned_train_data.csv`.
-2. **Modeling (`modeling.py`):** Training and comparing multiple machine learning models (Linear Regression, Random Forest, XGBoost, and Stacking Regressor) using Pipelines and ColumnTransformers. The best pipeline is saved as `pipe.pkl`.
-3. **Deployment (UI):** (coming soon by the team).
+An end-to-end Machine Learning project designed to accurately predict used car market prices and forecast market demand. This system leverages advanced data preprocessing, feature engineering, and robust regression models to help buyers, sellers, and dealerships make data-driven decisions.
 
-## 🛠️ Tech Stack
-- Python, Pandas, NumPy
-- Scikit-Learn, XGBoost
-- Matplotlib, Seaborn
-- .... (for UI)
+---
+
+## 🌟 Key Features
+
+- **Accurate Price Prediction:** Estimates the market value of used cars based on specifications, mileage, brand, year, and condition.
+- **Demand Analysis:** Explores market trends and listing attributes to understand vehicle demand drivers.
+- **Exploratory Data Analysis (EDA):** Deep-dive visualizations uncovering correlations between depreciation, mileage, and price.
+- **Robust ML Pipeline:** Clean, modular code structure handling missing values, categorical encoding, feature scaling, and model training.
+
+---
+
+## 📂 Project Structure
+
+```text
+Used-Car-Price-Demand-Predictor/
+│
+├── data/                  # Raw and processed datasets
+├── notebooks/             # Jupyter notebooks for EDA and experimentation
+├── src/                   # Source code (train.py, inference.py)
+├── models/                # Saved trained model checkpoints (.pkl)
+├── requirements.txt       # Required Python packages
+└── README.md              # Project documentation
